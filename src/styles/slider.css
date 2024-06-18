@@ -1,0 +1,39 @@
+.slick-slider {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  
+}
+
+.slick-slide {
+  margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+.slick-prev, .slick-next {
+  font-size: 1.5em;
+}
+
+.slick-slider {
+  display: flex;
+  gap: 10px;
+}
+
+.slick-prev {
+  left: -75px;
+}
+
+.slick-next {
+  right: -75px;
+}
+
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  background-color: black;
+}/*# sourceMappingURL=slider.css.map */

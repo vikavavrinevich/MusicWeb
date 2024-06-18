@@ -1,0 +1,507 @@
+@import url(https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Delius+Unicase:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.load-1 .line:nth-last-child(1) {
+  animation: loadingA 1.5s 1s infinite;
+}
+
+.load-1 .line:nth-last-child(2) {
+  animation: loadingA 1.5s 0.5s infinite;
+}
+
+.load-1 .line:nth-last-child(3) {
+  animation: loadingA 1.5s 0s infinite;
+}
+
+.line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #f7b035;
+  margin: 0px auto;
+}
+
+@keyframes loadingA {
+  0% {
+    height: 15px;
+  }
+  50% {
+    height: 35px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+.mask {
+  background-color: black;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.load-1 {
+  width: 60px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  color: transparent;
+  scrollbar-color: #ee3abb #2e2e2e;
+
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f7b035;
+  border-radius: 64px;
+  border: 3px dotted #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    scrollbar-color: rgba(247, 176, 53, 0) #2e2e2e;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: Unbounded;
+}
+
+* {
+  color: #ffffff;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes garlicAnimation {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes tomatoAnimation {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes leaf {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes leafAnimation {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+* {
+  color: #ffffff;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: auto;
+  height: 50px;
+}
+.header__name {
+  font-size: 25px;
+}
+.header__nav {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.header__nav-element {
+  color: #fff;
+}
+.header__cart {
+  width: 30px;
+  height: 30px;
+}
+/* 
+.footer {
+  background: rgb(240,63,251);
+  background: radial-gradient(circle, rgb(251, 63, 154) 0%, rgb(239, 21, 90) 100%);
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 120px;
+  padding-bottom: 130px;
+}
+.footer__customer__title {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.footer__customer__list-element {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  line-height: 20px;
+  color: #616161;
+}
+.footer__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__info-adressa {
+  margin-top: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #616161;
+}
+.footer__info__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+}
+.footer__info__box-name {
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+}
+.footer__info__box-email {
+  font-size: 15px;
+  color: #000;
+  font-family: "Rubik", sans-serif;
+}
+.footer__info__box-phone {
+  font-size: 15px;
+  color: #000;
+  font-family: "Rubik", sans-serif;
+}
+.footer__time__title {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.footer__time__box {
+  display: flex;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  color: #616161;
+  font-weight: 400;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer__time__box-day {
+  font-family: "Rubik", sans-serif;
+}
+.footer__time__box-time {
+  font-family: "Rubik", sans-serif;
+  color: #000;
+}
+ */
+
+
+/* Footer General Styling */
+.footer {
+  background: rgb(240,63,251);
+  background: radial-gradient(circle, rgb(251, 63, 154) 0%, rgb(239, 21, 90) 100%);
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 120px;
+  padding-bottom: 130px;
+}
+
+/* Customer Section */
+.customer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.customer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.customer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.customer-list-item {
+  margin-bottom: 5px;
+}
+
+/* Info Section */
+.info-section {
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.info-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.info-box {
+  margin-bottom: 10px;
+}
+
+.info-box-name {
+  font-weight: bold;
+}
+
+.info-box-phone, .info-box-email {
+  margin: 0;
+}
+
+/* Music Section */
+.music-section {
+  flex: 1;
+text-align: right;
+}
+
+.music-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.music-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.music-block li {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subscribe {
+  padding: 100px 0px;
+  background: rgb(136,17,133);
+  background: linear-gradient(90deg, rgba(136,17,133,1) 0%, rgba(255,66,215,1) 35%, rgba(255,0,180,1) 100%);
+}
+.subscribe__subtitle {
+  color: #fff;
+  font-family: "Rubik";
+  text-align: center;
+  font-size: 26px;
+}
+.subscribe__title {
+  margin-top: 15px;
+  color: #fff;
+  font-family: "Rubik";
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+}
+.subscribe__input-box {
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 800px;
+  min-width: 400px;
+}
+.subscribe__btn {
+  background-color: #f735ad;
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.subscribe__input {
+  margin-left: 35px;
+  font-size: 16px;
+  width: 70%;
+}
+.subscribe__input::-moz-placeholder {
+  font-size: 16px;
+}
+.subscribe__input::placeholder {
+  font-size: 16px;
+}
+
+* {
+  color: #ffffff;
+}
+
+.notification {
+  display: none;
+  align-items: center;
+  gap: 30px;
+  position: fixed;
+  top: 50px;
+  right: -500px;
+  width: 300px;
+  height: 50px;
+  background-color: #F7B035;
+  z-index: 1500;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+}
+
+.notification.active {
+  display: flex;
+  animation: notificationShow 2s;
+  right: -300px;
+}
+
+@keyframes notificationShow {
+  0% {
+    right: -300px;
+  }
+  100% {
+    right: 50px;
+  }
+}
+.notification-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(117, 219, 117);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.notification-txt {
+  color: #fff;
+}
+
+.notification-line {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #000;
+}/*# sourceMappingURL=standart.css.map */
